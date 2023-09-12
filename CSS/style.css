@@ -1,0 +1,16 @@
+div{
+    background-color: aquamarine;
+    color: navy;
+}
+p{
+    font-family: cursive;
+}  
+
+.destination{
+    background-color: navy;
+    color: white;
+    border-color: red;
+    border-width: 1cm;
+    border-style: do;
+
+}

@@ -1,0 +1,26 @@
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.top-container{
+   background-color: blue; 
+   border: black solid 10px;
+   padding: 20px;
+   color: white;
+
+}
+
+.middle-container{
+    background-color: red;
+    border: black solid 20px;
+    position: relative;
+    left: 260px;
+}
+
+.bottom-container{
+    background-color: yellow;
+    border: black solid 10px;
+    position: relative;
+    left: 490px;
+}
