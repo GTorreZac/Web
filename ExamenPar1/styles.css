@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;  
+}
+@font-face {
+    font-family:Poppins;
+    src:url(Poppins\PoppinsLight.ttf);
+    font-family:Poppins;
+    src: url(Poppins\Poppins-SemiBold.ttf);
+    font-family:v;
+    src: url(Poppins\Poppins-Regular.ttf);
+    
+}
+body{
+    background-color: #FAFAFA;
+}
+#light{
+    font-family:Poppins;
+    font-weight: 200;
+}
+#bold{
+    font-family:Poppins;
+    font-weight: 600;
+    margin-top: -21px;
+}
+#little{
+    font-family:Poppins;
+    font-weight: 400;
+    margin-top: -8px;
+}
+.lightGray{
+    color:#4C4E61;
+}
+.BlueGray{
+    color:#A3A5AE;
+}
+.red{
+
+    margin: 0 auto;
+    width: 310px;
+    height: 220px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 6px;
+    border-top: 4px solid #EA5353;
+    box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(238, 236, 236);
+}
+#team{
+    font-family:Poppins;
+    font-weight: 600;
+    margin-left: 28px;
+}
+#team2{
+    font-family:Poppins;
+    font-weight: 400;
+    margin-left: 29px;
+    margin-top: -10px;
+    font-size: 12px;
+    color:#A3A5AE;
+}
+.iconT{
+    margin-left: 228px;
+    margin-top: 15px;
+    width:55px;
+    height:55px;
+}
+.cyan{
+    /* display: flex;
+     align-items: center;
+     justify-content: center;*/
+     margin-left: 268px;
+     margin-top: -95px;
+     width: 310px;
+     height: 220px;
+     background-color:rgb(255, 255, 255);
+     border-radius: 6px;
+     border-top: 4px solid #45D3D3;
+     box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(227, 226, 226);
+ }
+ #super{
+     font-family:Poppins;
+     font-weight: 600;
+     margin-left: 28px;
+ }
+ #super_2{
+     font-family:Poppins;
+     font-weight: 400;
+     margin-left: 29px;
+     margin-top: -10px;
+     font-size: 12px;
+     color:#A3A5AE;
+ }
+ .blue{
+    /* display: flex;
+     align-items: center;
+     justify-content: center;*/
+     margin-left: 942px;
+     margin-top: -220px;
+     width: 310px;
+     height: 220px;
+     background-color:rgb(255, 255, 255);
+     border-radius: 6px;
+     border-top: 4px solid #549EF2;
+     box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(227, 226, 226);
+ }
+ #calculadora{
+     font-family:Poppins;
+     font-weight: 600;
+     margin-left: 28px;
+ }
+ #calculadora_2{
+     font-family:Poppins;
+     font-weight: 400;
+     margin-left: 29px;
+     margin-top: -10px;
+     font-size: 12px;
+     color:#A3A5AE;
+ }
+ .orange{
+    
+    margin:0 auto;
+     margin-top: -97px;
+     width: 310px;
+     height: 220px;
+     background-color:rgb(255, 255, 255);
+     border-radius: 6px;
+     border-top: 4px solid #FCAF4A;
+     box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(227, 226, 226);
+ }
+ #karma{
+     font-family:Poppins;
+     font-weight: 600;
+     margin-left: 28px;
+ }
+ #karma_2{
+     font-family:Poppins;
+     font-weight: 400;
+     margin-left: 29px;
+     margin-top: -10px;
+     font-size: 12px;
+     color:#A3A5AE;
+ }
+ 
