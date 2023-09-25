@@ -1,141 +1,97 @@
-*{
-    box-sizing: border-box;  
-}
-@font-face {
-    font-family:Poppins;
-    src:url(Poppins\PoppinsLight.ttf);
-    font-family:Poppins;
-    src: url(Poppins\Poppins-SemiBold.ttf);
-    font-family:v;
-    src: url(Poppins\Poppins-Regular.ttf);
-    
-}
-body{
-    background-color: #FAFAFA;
-}
-#light{
-    font-family:Poppins;
-    font-weight: 200;
-}
-#bold{
-    font-family:Poppins;
-    font-weight: 600;
-    margin-top: -21px;
-}
-#little{
-    font-family:Poppins;
-    font-weight: 400;
-    margin-top: -8px;
-}
-.lightGray{
-    color:#4C4E61;
-}
-.BlueGray{
-    color:#A3A5AE;
-}
-.red{
+/* styles.css */
 
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
     margin: 0 auto;
-    width: 310px;
-    height: 220px;
-    background-color:rgb(255, 255, 255);
-    border-radius: 6px;
-    border-top: 4px solid #EA5353;
-    box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(238, 236, 236);
+    padding: 20px;
 }
-#team{
-    font-family:Poppins;
-    font-weight: 600;
-    margin-left: 28px;
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
-#team2{
-    font-family:Poppins;
-    font-weight: 400;
-    margin-left: 29px;
-    margin-top: -10px;
-    font-size: 12px;
-    color:#A3A5AE;
+
+nav ul {
+    list-style-type: none;
 }
-.iconT{
-    margin-left: 228px;
-    margin-top: 15px;
-    width:55px;
-    height:55px;
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
-.cyan{
-    /* display: flex;
-     align-items: center;
-     justify-content: center;*/
-     margin-left: 268px;
-     margin-top: -95px;
-     width: 310px;
-     height: 220px;
-     background-color:rgb(255, 255, 255);
-     border-radius: 6px;
-     border-top: 4px solid #45D3D3;
-     box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(227, 226, 226);
- }
- #super{
-     font-family:Poppins;
-     font-weight: 600;
-     margin-left: 28px;
- }
- #super_2{
-     font-family:Poppins;
-     font-weight: 400;
-     margin-left: 29px;
-     margin-top: -10px;
-     font-size: 12px;
-     color:#A3A5AE;
- }
- .blue{
-    /* display: flex;
-     align-items: center;
-     justify-content: center;*/
-     margin-left: 942px;
-     margin-top: -220px;
-     width: 310px;
-     height: 220px;
-     background-color:rgb(255, 255, 255);
-     border-radius: 6px;
-     border-top: 4px solid #549EF2;
-     box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(227, 226, 226);
- }
- #calculadora{
-     font-family:Poppins;
-     font-weight: 600;
-     margin-left: 28px;
- }
- #calculadora_2{
-     font-family:Poppins;
-     font-weight: 400;
-     margin-left: 29px;
-     margin-top: -10px;
-     font-size: 12px;
-     color:#A3A5AE;
- }
- .orange{
-    
-    margin:0 auto;
-     margin-top: -97px;
-     width: 310px;
-     height: 220px;
-     background-color:rgb(255, 255, 255);
-     border-radius: 6px;
-     border-top: 4px solid #FCAF4A;
-     box-shadow: -5px 5px 30px rgb(207, 213, 215), 5px 5px 30px  rgb(227, 226, 226);
- }
- #karma{
-     font-family:Poppins;
-     font-weight: 600;
-     margin-left: 28px;
- }
- #karma_2{
-     font-family:Poppins;
-     font-weight: 400;
-     margin-left: 29px;
-     margin-top: -10px;
-     font-size: 12px;
-     color:#A3A5AE;
- }
- 
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
