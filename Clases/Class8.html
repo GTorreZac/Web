@@ -11,9 +11,13 @@
             color: white;
         }
         h1{
-            background-color: blue;
-            color: white;
+            background-color: gray;
         }
+        p{
+            border: dashed;
+            height: 30px;
+        }
+
     </style>
 </head>
 
@@ -21,9 +25,24 @@
 <body>
 
     <h1 onclick= "addition();">Hello world</h1>
-    <h1 class="sampler" ondblclick="alert('I said hello!!');"> Hello world again</h1>
+    <h1 class="sampler" ondblclick="callAction()"> Hello world again</h1>
     <p></p>
-    <script src="JS\index.js" charset="UTF-8"></script>
+    <p class="special"></p>
+    <p></p>
+    <ul>
+        <li id="first">Item 1</li>
+        <li class="special">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ul class="list">
+        <li id="first">Item A</li>
+        <li class="special">Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <script src="JS\index.js" 
+    charset="UTF-8"></script>
    
 </body>
 </html>

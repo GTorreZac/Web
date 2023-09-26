@@ -1,0 +1,5 @@
+cd C:\Users\gtorr\OneDrive\Escritorio\GTZ\UP\WEB
+git init 
+git add *
+git commit -m "actualizacion"
+git push origin master
