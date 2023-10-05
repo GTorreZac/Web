@@ -20,5 +20,8 @@ function callAction(){
 
     document.querySelector(".list #first").classList.add
     ("highlight");
+
+    document.querySelector("a").setAttribute("href","http://www.google.com");
+    
     
 }
