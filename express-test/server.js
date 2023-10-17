@@ -7,6 +7,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.engine("ejs",require("ajs").renderFile);
 app.set("view engine", "ejs");
 
+const family =["Diana", "Sergio", "Carmen","Vanessa","Gabriel"];
+
 app.get('/', function (req, res) {
   res.sendFile(__dirname + "/public/html/index.html");
 });
@@ -37,6 +39,15 @@ app
 
     res.send("<h1>Hello " + username + " you are now logged in POST</h1>");
   });
+
+app.use((err, req, res, next)=> {
+  console.error(err.stack);
+  res
+  .status(500)
+  .render("error",{
+    message: "There was an error in the processing of your request",
+  });
+})
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");

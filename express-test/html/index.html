@@ -1,51 +1,198 @@
+<%- include("partials/head"); -%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    <link href="../images/Akira.jpg" type="image/png" rel="icon" sizes="32x32" />
+    <title>Personal Website</title>
 </head>
-<body>
+<body style="background-image: url('images/bird.jpg');">
     <div class="container">
-        <a href="../html/Destination.html">Link to a destination</a>
+        <div class="row">
+            <h1>Hello <%= name %></h1>
+        </div>
     </div>
+
     <div class="container">
-        <form>
+        <ul>
+            <li><a href="/about?name=Gabriel">Say hello to Gabriel</a></li>
+            <li><a href="/about?name=Jose">Say hello to Jose</a></li>
+        </ul>
+        <ul>
+            <% family.forEach(function(member) { %>
+                <li><a href="/about/<%= member %>/detail">Say hello to <%= member %></a></li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form action="/login" method="post">
             <label for="username">User:</label>
-            <input type="text" name="username" id="username" placeholder="Introduce your name" />
-            <br />
+            <input type="text" name="username" id="username" placeholder="Introduce your username">
+            <br/>
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password" placeholder="Password" />
-            <br />
-            <input type="submit" value="Submit" />
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br/>
+            <input type="submit" value="Submit"/>
         </form>
     </div>
-    <div>
-        <h1>gabriel</h1>
-        <img src="./Images/dragons-war-cool-artwork.jpg" alt="Logo de la up" width="30%" />
-        <p>I am a student at UP Guadalajara<br />
-        Hello world, my name is Santiago, and I'm from <i>Guadalajara</i> in <strong>Mexico</strong></p>
-        
-        <blockquote>"Do or not, there is no try" --Yoda</blockquote>
-        <div> 
-            <blockquote class="jon">"The winter is coming" - Jon Snow.</blockquote>
-        </div>
-        <a href="destination.html" alt="Link to destinations page">My favorite vacation</a>
 
-        <a href="http://google.com" alt="Link to Google" target="_blank">Google</a>
-        <a href="#233" alt="Link to my recent activities">My recent activities</a>
-        <div class="destination">
-            <h2>Education</h2>
-            <ul>
-                <li>Kinder del Asuncion en <i>2005-2006</i></li>
-                <li>Primaria del Asuncion en <i>2007</i></li>
-                <li>Secundaria del Asuncion en <i>2013</i></li>
-                <li>Preparatoria del Asuncion en <i>2016</i></li>
-            </ul>
-        </div>
+    <div class="container" style="background-color: aquamarine;">
+        <h1> Gabriel Torres</h1>
+        <img src="./images/bird.jpg" alt="A bird" />
+        <p>
+            I am a student at UP Guadalajara.<br>
+            My address is <em>Paseos Universidad</em>, <strong>Zapopan</strong>
+        </p>
+        <blockquote>"Do or do not, there is no try" --Yoda.</blockquote>
     </div>
+
+    <a href="../html/destination.html" alt="Link to destinations page">My favorite places to go</a>
+    <a href="http://google.com" alt="Link to Google" target="_blank">Google</a>
+    <a href="#recent" alt="Link to my recent activities">My recent activities</a>
+    <a href="destination.html#vacation" alt="Link to vacation table">Vacation table</a>
+
+    <h2>Education</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Years</th>
+                <th>Name</th>
+                <th>Logo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2006-2009</td>
+                <td>Kinder Reykin</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2009-2018</td>
+                <td>Colegio Lomas del Valle</td>
+                <td><img src="https://tse3.mm.bing.net/th?id=OIP.K_Q5vpLw96J9bQH2QmE4pAHaGt&pid=Api&P=0&h=180" alt="Logo de la Lomas del Valle" width="100%" /></td>
+            </tr>
+            <tr>
+                <td>2018-2021</td>
+                <td>UNIVA</td>
+                <td><img src="https://www.univa.mx/wp-content/uploads/2018/06/top_logo_univa.png" alt="Logo de UNIVA" width="100%" /></td>
+            </tr>
+            <tr>
+                <td>2021-</td>
+                <td>Universidad Panamericana</td>
+                <td><img src="https://www.enroll-u.com/index.php/_i/2/7/6/8c464a12-a139-11ea-b8a3-0295ecf211ad.png" alt="Logo de UP" width="100%" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Write an ordered list of your top 5 technical skills with a percentage of mastery. The percentage part should be emphasized.</p>
+
+    <ul>
+        <li>Java <strong>40%</strong></li>
+        <li>C <strong>40%</strong></li>
+        <li>Python <strong>30%</strong></li>
+        <li>C++ <strong>25%</strong></li>
+        <li>C# <strong>10%</strong></li>
+    </ul>
+
+    <h1>Homework</h1>
+    <p>In a list at the same level as education, out of a list of 20 subjects, show your top 3 most-liked school subjects and the bottom 3.</p>
+
+    <p><strong>I don't want to know any of the subjects in between!</strong> They have to be properly numbered, each with a title "Top 3" and "Bottom 3."</p>
+
+    <h2>Top 3</h2>
+    <ol>
+        <li>Digital modeling</li>
+        <li>Digital and Electrical Circuits</li>
+        <li>Videogames development</li>
+    </ol>
+
+    <h2>Bottom 3</h2>
+    <ol start="18">
+        <li>Physical</li>
+        <li>Differential Calculus</li>
+        <li>Chemistry</li>
+    </ol>
+
+    <h3 id="recent">Hobbies</h3>
+    <ul>
+        <li>Movies
+            <ol>
+                <li>Lord of the Rings</li>
+                <li>Avengers: Endgame</li>
+                <li>Iron Man 3</li>
+            </ol>
+        </li>
+        <li>Books
+            <ol type="a">
+                <li>Ready Player One</li>
+                <li>La ladrona de libros</li>
+                <li>Codigo DaVinci</li>
+            </ol>
+        </li>
+        <li>TV Shows
+            <ol type="I">
+                <li>Loki</li>
+                <li>The Rings of Power</li>
+                <li>Gravity Falls</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h2>My family's birthdays</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Birth date</th>
+                <th>Birth place</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C</td>
+                <td>Jose</td>
+                <td>Castillo
+
+                <td>March 1st</td>
+                <td>Zapopan</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>100</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Contact me</h2>
+    <form action="#" method="d">
+        <table border="1" width="60%">
+            <tbody>
+                <tr>
+                    <td><label for="usr_name">Name</label></td>
+                    <td><input type="text" name="usr_name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="usr_email">Email</label></td>
+                    <td><input type="email" name="usr_email"/></td>
+                </tr>
+                <tr>
+                    <td><label for="usr_date">Date</label></td>
+                    <td><input type="date" name="usr_date"/></td>
+                </tr>
+                <tr>
+                    <td colspan ="2"><textarea id="msg">Write a message</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan ="2"><input type="submit" value="Submit"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
 </body>
 </html>
