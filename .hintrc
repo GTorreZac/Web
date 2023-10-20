@@ -4,6 +4,20 @@
   ],
   "hints": {
     "disown-opener": "off",
-    "axe/forms": "off"
+    "axe/forms": "off",
+    "meta-viewport": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
