@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - CSS</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img class="sticky" src="./image/cloud.png" alt="A cloud" />
+    <img class="sticky" src="./image/cloud.png" alt="A cloud" />
+    <img class="static" src="./image/mountain.png" alt="A mountain" />
+
+    <div id="header_info">
+        <!-- This is a title -->
+        <h1> Gabriel Torres</h1>
+        <img src="./image/bird.jpg" alt="A bird" />
+        <p>
+            I am an student at UP Guadalajara. </br>
+            My address is <em>Jocotan</em>, <strong> Zapopan</strong>
+        </p>
+        <blockquote>"Do or do not, ther is not try" --Yoda.</blockquote>
+
+    </div>
+
+    <blockquote>"A" --Yoda.</blockquote>
+    <hr>
+    <div class="even">
+        <a href="destination.html" alt="Link to destinations page">My favorite places to go</a>
+        <a href="http://google.com" alt="Link to Google" target="_blank">Google</a>
+        <a href="#recent" alt="Link to my recent activities">My recent activities</a>
+        <a href="destination.html#vacation" alt="Link to vacation table">Vacation table</a>
+    </div>
+
+    <hr>
+    <div>
+        <h2>Education</h2>
+        <table border="1" id="school">
+            <thead>
+                <tr>
+                    <th>Years</th>
+                    <th>Name</th>
+                    <th>Logo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2005-2007</td>
+                    <td>Kinder Kikiwui</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2007-2012</td>
+                    <td>Colegio Juana de Arco</td>
+                    <td><img class="logos"
+                            src="https://colegiojuanadearco.edu.mx/wp-content/uploads/2021/05/Colegio-Bilingue-Juana-de-Arco-La-Estancia-A.C..png"
+                            alt="Logo de Juana de Arco" width="100%" /></td>
+                </tr>
+                <tr>
+                    <td>2012-2013</td>
+                    <td>Colegio Anglo Frances</td>
+                    <td><img class="logos" src="https://anglofrances.com/wp-content/uploads/2023/03/AFLF1.png"
+                            alt="Logo de Anglo Frances" width="100%" /></td>
+                </tr>
+                <tr>
+                    <td>2013-2017</td>
+                    <td>Lincoln School</td>
+                    <td><img class="logos"
+                            src="https://www.teacherhorizons.com/static/mediav2/schools/3881/images/516005_main.jpg"
+                            alt="Logo de Lincoln School" width="100%" /></td>
+                </tr>
+                <tr>
+                    <td>2017-2020</td>
+                    <td>CEDI</td>
+                    <td><img class="logos"
+                            src="https://www.cedi.edu.mx/pics/CEDG_LOGO.gif"
+                            alt="Logo de Cedi" width="100%" /></td>
+                </tr>
+                <tr>
+                    <td>2021-</td>
+                    <td>Universidad Panamericana</td>
+                    <td><img class="logos"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQP_r99PPDt8FMib7tNTS9qCgKZUQmYc_n-WeUdBR6P708zqmrML4sEqU04scFl8z4oyM&usqp=CAU"
+                            alt="Logo de UP" width="100%" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+    <div class="even">
+        <p>Write an ordered list of your top 5 technical skills with a percentage of mastery. The percentage part should
+            be emphasize </p>
+
+        <u2>
+            <li>Java <strong>20%</strong></li>
+            <li>C <strong>50%</strong></li>
+            <li>Python <strong>10%</strong></li>
+            <li>C++ <strong>65%</strong></li>
+            <li>C# <strong>40%</strong></li>
+        </u2>
+    </div>
+
+    <hr>
+    <div>
+        <h1>Homework</h1>
+        
+        <h2>Top 3</h2>
+        <ol>
+            <li>Programación Avanzada</li>
+            <li>Modelacion 3D</li>
+            <li>Base de Datos</li>
+        </ol>
+
+        <h2>Bottom 3</h2>
+        <ol start="18">
+            <li>Quimica</li>
+            <li>Calculo Integral</li>
+            <li>Calculo Diferencial</li>
+        </ol>
+    </div>
+
+    <hr>
+    <div class="even">
+        <h3 id="recent">Hobbies</h3>
+        <ul>
+            <li>
+                <span>Movies</span>
+                <ol>
+                    <li>Fate: Heaven's Feel</li>
+                    <li>No Game No Life: Zero</li>
+                    <li>Apocaclyta</li>
+                </ol>
+            </li>
+            <li>
+                Books
+                <ol type="a">
+                    <li>Classroom of the Elite</li>
+                    <li>Rebuild World</li>
+                    <li>Death Mage Doesn't Want a Fourth Time</li>
+                </ol>
+            </li>
+            <li>
+                TV Shows
+                <ol type="I">
+                    <li>Loki</li>
+                    <li>Black Clover</li>
+                    <li>Eminence in the Shadow</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+    <div>
+        <h2>My family's birthdays</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th colspan="2">Name</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Last name</th>
+                    <th>Birth date</th>
+                    <th>Birth place</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">C</td>
+                    <td>Sergio</td>
+                    <td>Torres</td>
+                    <td>Nunio 22</td>
+                </tr>
+                <tr>
+                    <td>Sergio</td>
+                    <td>Torres</td>
+                    <td>Nunio 22</td>
+                    <td>Zapopan</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>100</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <hr>
+    <div class="even">
+        <h2>Contact me</h2>
+        <form action="#" method="d">
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td><label for="usr_name">Name</label></td>
+                        <td><input type="text" name="usr_name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usr_email">Email</label></td>
+                        <td><input type="email" name="usr_email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usr_date">Date</label></td>
+                        <td><input type="date" name="usr_date" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="msg">Write a message</textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class="heroe">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="./image/dare.jpg" alt="Daredevil" style="width:100%">
+                    <div class="container">
+                        <h2>Daredevil</h2>
+                        <p class="title">Superheroe &amp; Lawyer</p>
+                        <p>Abril 1964</p>
+                        <p>Hell's Kitchen Devil and Lawyer, Matt learned to master his senses and becomes a formidable
+                            fighter.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="./image/iron.jpg" alt="Iron Man" style="width:100%">
+                    <div class="container">
+                        <h2>Iron Man</h2>
+                        <p class="title">Superheroe</p>
+                        <p>March, 1963</p>
+                        <p>Anthony Edward Stark is Superheroe that is helping the new generation to adapt to this world
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="./image/ant.jpg" alt="Ant Man" style="width:100%">
+                    <div class="container">
+                        <h2>Ant Man</h2>
+                        <p class="title">Superheroe</p>
+                        <p>March, 1979</p>
+                        <p>Man that became a superheroe and teaches others the way of the redeption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

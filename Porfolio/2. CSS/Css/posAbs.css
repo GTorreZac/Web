@@ -1,0 +1,22 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.top-container {
+    background-color: red;
+    position: absolute;
+    top: 410px;
+    right: 930px;
+}
+
+.middle-container {
+    background-color: blue;
+    position: absolute;
+    top: 210px;
+    right: 1130px;
+}
+
+.bottom-container {
+    background-color: yellow;
+}
