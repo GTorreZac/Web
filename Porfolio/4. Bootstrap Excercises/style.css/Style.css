@@ -1,80 +1,97 @@
 p {
-    font-family: cursive;
+    font-family: 'Roboto', sans-serif;
+    color: #00ff00;
+    mix-blend-mode: difference;
 }
 
 blockquote {
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff00ff;
+    mix-blend-mode: difference;
 }
 
 h1~blockquote {
-    color: crimson;
+    color: #ff4500;
+    mix-blend-mode: difference;
 }
 
 tbody {
-    background-color: blueviolet;
+    background-color: #8A2BE2;
+    mix-blend-mode: difference;
 }
 
 .destination {
-    background-color: navy;
-    color: white;
-    border-color: red;
+    background-color: #000080;
+    color: #00ff00;
+    mix-blend-mode: difference;
+    border-color: #FF4500;
     border-width: 1cm;
-    border-style: dotted;
+    border-style: dashed;
 }
 
 #school {
-    background-color: olive;
-    color: white;
-    border-color: gold;
+    background-color: #556B2F;
+    color: #ffd700;
+    mix-blend-mode: difference;
+    border-color: #FFD700;
     border-width: 1cm;
-    border-style: dashed;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: dotted;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .destination tbody {
-    background-color: olive;
+    background-color: #556B2F;
+    mix-blend-mode: difference;
 }
 
 .destination td {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    mix-blend-mode: difference;
 }
 
 .destination>h1 {
-    color: gold;
+    color: #ffd700;
+    mix-blend-mode: difference;
 }
 
 .promoted {
     font-size: x-large;
+    color: #ff4500;
+    mix-blend-mode: difference;
 }
 
 .destination.promoted {
-    color: crimson;
+    color: #ff4500;
+    mix-blend-mode: difference;
 }
 
 body {
-    background-color: darkgreen;
-    font-family: 'Merriweather', serif;
-    align-self: center;
+    background-color: #000;
+    font-family: 'Orbitron', sans-serif;
+    mix-blend-mode: difference;
 }
 
 h1 {
-    font-family: 'Sacramento', cursive;
-    color: aqua;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffff;
+    mix-blend-mode: difference;
     font-size: 5.5rem;
     margin: 50px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
     padding: 10px;
-    color: maroon;
+    color: #8A2BE2;
+    mix-blend-mode: difference;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: bisque;
+    font-family: 'Orbitron', sans-serif;
+    mix-blend-mode: difference;
+    color: #ffe4c4;
 }
 
 hr {
@@ -90,19 +107,24 @@ hr {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #00BFFF;
+    mix-blend-mode: difference;
 }
 
 a:link {
-    color: blue;
+    color: #00BFFF;
+    mix-blend-mode: difference;
 }
 
 /* visited link */
 a:visited {
-    color: blue;
+    color: #00BFFF;
+    mix-blend-mode: difference;
 }
 
 a:hover {
-    color: green;
+    color: #00ff00;
+    mix-blend-mode: difference;
 }
 
 .logos {
@@ -112,10 +134,11 @@ a:hover {
 }
 
 .even {
-    background-color: springgreen;
+    background-color: #00ff7f;
+    mix-blend-mode: difference;
 }
 
-/* Three columns side by side */
+/* Tres columnas una al lado de la otra */
 .column {
     float: left;
     width: 30%;
@@ -123,7 +146,7 @@ a:hover {
     padding: 0 8px;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
+/* Mostrar las columnas una debajo de la otra en pantallas pequeñas */
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
@@ -131,17 +154,17 @@ a:hover {
     }
 }
 
-/* Add some shadows to create a card effect */
+/* Agregar sombras para crear un efecto de tarjeta */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Some left and right padding inside the container */
+/* Algún relleno izquierdo y derecho dentro del contenedor */
 .container {
     padding: 0 16px;
 }
 
-/* Clear floats */
+/* Limpiar los flotadores */
 .container::after,
 .row::after {
     content: "";
@@ -150,7 +173,8 @@ a:hover {
 }
 
 .title {
-    color: grey;
+    mix-blend-mode: difference;
+    color: #808080;
 }
 
 .button {
@@ -158,7 +182,7 @@ a:hover {
     outline: 0;
     display: inline-block;
     padding: 8px;
-    color: white;
+    color: #fff;
     background-color: #000;
     text-align: center;
     cursor: pointer;
@@ -170,25 +194,54 @@ a:hover {
 }
 
 .heroe {
-    background-color: gray;
-    border-style: dotted;
+    background-color: #808080;
+    mix-blend-mode: difference;
+    border-style: dashed;
     border-color: #EAF6F6;
     border-width: 6px;
 }
 
 input {
     border-radius: 50%;
-    background-color: gold;
+    background-color: #ffd700;
+    mix-blend-mode: difference;
 }
 
 .mountain {
     position: static;
 }
 
-
 .sticky {
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 0;
+}
+
+.homework {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+}
+
+.homework h1 {
+    font-size: 2rem;
+    color: #00ffff;
+    /* Cian neón */
+}
+
+.homework h2 {
+    font-size: 1.5rem;
+    color: #ff00ff;
+    /* Rosa neón */
+}
+
+.homework ol {
+    list-style-type: decimal;
+    color: #00ff00;
+    /* Verde neón */
+}
+
+.homework li {
+    margin: 5px;
 }
