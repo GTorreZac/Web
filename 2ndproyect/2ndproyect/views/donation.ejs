@@ -1,0 +1,89 @@
+<!-- This part includes the header where the initial part of the code is called -->
+<%- include("Partials/header"); -%>
+  <div class="b-example-divider"></div>
+  <div class="container">
+    <div id="flip" class="row">
+      <div class="col-4">
+        <h3>Donate</h3>
+        <br>
+      </div>
+    </div>
+    <form id="panel" class="row g-3 border border-black">
+      <div class="col-md-5">
+        <label for="validationDefault01" class="form-label">Name</label>
+        <input type="text" class="form-control" id="validationDefault01" required>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefaultUsername" class="form-label">Cellphone</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefaultUsername" class="form-label">Email</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">Select Donation</label>
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>$250</option>
+          <option>$350</option>
+          <option>$500</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefaultUsername" class="form-label">Other</label>
+        <div class="input-group">
+          <input type="number" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationDefaultUsername" class="form-label">Credit card</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+      </div>
+
+
+      <div class="col-md-3">
+        <label for="validationDefaultUsername" class="form-label">CVV</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+      </div>
+
+
+      <div class="col-md-3">
+        <label for="validationDefaultUsername" class="form-label">Expiration date
+          <div class="input-group">
+            <input type="date" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+              required>
+          </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit information</button>
+      </div>
+    </form>
+
+    <!-- This part includes the footer that is used to call the final part of the code. -->
+    <%- include("Partials/footer"); -%>

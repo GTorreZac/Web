@@ -1,0 +1,148 @@
+<!-- This part includes the header where the initial part of the code is called -->
+<%- include("Partials/header"); -%>
+    <div class="b-example-divider"></div>
+    <div class="container">
+      <div id="flip" class="row">
+        <div class="col-4">
+          <h3>Donate Books</h3>
+          <br>
+        </div>
+      </div>
+      <form id="panel" class="row g-3 border border-black">
+        <div class="col-md-5">
+          <label for="validationDefault01" class="form-label">Name of the Book</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefaultUsername" class="form-label">Cellphone</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault03" class="form-label">Genre</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Fiction</option>
+            <option>Fantasy</option>
+            <option>Science Fiction</option>
+            <option>Dystopian</option>
+            <option>Action & Adventure</option>
+            <option>Mystery</option>
+            <option>Horror</option>
+            <option>Thriller & Suspense</option>
+            <option>Historical Fiction</option>
+            <option>Romance</option>
+            <option>Women's Fiction</option>
+            <option>LGBTQ+</option>
+            <option>Contemporary Fiction</option>
+            <option>Literary Fiction</option>
+            <option>Magical Realism</option>
+            <option>Graphic Novel</option>
+            <option>Short Story</option>
+            <option>Young Adult</option>
+            <option>New Adult</option>
+            <option>Children's</option>
+            <option>Nonfiction</option>
+            <option>Memoir & Autobiography</option>
+            <option>Biography</option>
+            <option>Food & Drink</option>
+            <option>Art & Photography</option>
+            <option>Self-help</option>
+            <option>History</option>
+            <option>Travel</option>
+            <option>True Crime</option>
+            <option>Humor</option>
+            <option>Essays</option>
+            <option>Guide</option>
+            <option>Religion & Spirituality</option>
+            <option>Humanities & Social Science</option>
+            <option>Parenting & Families</option>
+            <option>Science & Technology</option>
+            <option>Children's</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Reading Level</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>A - 4</option>
+            <option>6 - 16</option>
+            <option>18 - 24</option>
+            <option>28 - 38</option>
+            <option>40 - 50</option>
+            <option>60 - 80</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Subject</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Arts</option>
+            <option>Animals</option>
+            <option>Fiction</option>
+            <option>Science and math</option>
+            <option>Business</option>
+            <option>Child</option>
+            <option>History</option>
+            <option>Health and wellness</option>
+            <option>Biographys</option>
+            <option>Social Science</option>
+            <option>Places</option>
+            <option>Text books</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <label for="validationDefaultUsername" class="form-label">Image of the Book</label>
+          <input type="file" class="form-control" aria-label="file example" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit information</button>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-4">
+          <h3><br>Inventory Available<br></h3>
+        </div>
+      </div>
+        <div class="col">
+        <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+          <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px" data-bs-theme="light">
+            <li><a class="dropdown-item rounded-2 active" href="#">Inventory</a></li>
+          </ul>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col-4">
+          <h3>Books needed</h3>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Company 1</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Link Page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Company 2</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Link Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- This part includes the footer that is used to call the final part of the code. -->
+    <%- include("Partials/footer"); -%>
